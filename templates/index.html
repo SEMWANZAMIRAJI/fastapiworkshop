@@ -1,14 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>{{ title }}</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-</head>
-<body class="bg-light text-center p-5">
-    <div class="container">
-        <h1 class="mb-4">Welcome to My FastAPI Project</h1>
-        <a href="/about" class="btn btn-primary">About Me</a>
+{% extends "base.html" %}
+
+{% block content %}
+    <div class="text-center">
+        <h1 class="display-4 text-primary">Welcome to My FastAPI Website</h1>
+        <p class="lead">A modern web app built with love by <strong>Miraji Semwanza</strong>.</p>
+        <a href="/about" class="btn btn-outline-primary btn-lg mt-4">Learn More About Me</a>
     </div>
-</body>
-</html>
+{% endblock %}
